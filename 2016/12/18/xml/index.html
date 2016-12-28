@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        XML的完全概要 | X
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Legolas">
+    <meta name="description" content="Record some ideas">
+    <meta name="keywords" content="weida,熊伟达,">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="X">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://weidablog.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="XML的完全概要 | X">
+    <meta property="og:description" content="Record some ideas">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-image: url(/img/bg.png);
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="/css/highlight/solarized-white.css">
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#XML的概要"><span class="post-toc-number">1.</span> <span class="post-toc-text">XML的概要</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#xml和html"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">xml和html</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#XML-什么也不做"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">XML 什么也不做</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#所有的XML文档必须有一个根元素"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">所有的XML文档必须有一个根元素</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#what-is-DTD"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">what is DTD?</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SCHEMA约束"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">SCHEMA约束</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CDATA区域"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">CDATA区域</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用XSL来显示XML文档"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">使用XSL来显示XML文档</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#名称空间-命名空间"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">名称空间(命名空间)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#命名冲突"><span class="post-toc-number">1.8.1.</span> <span class="post-toc-text">命名冲突</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用前缀解决命名冲突问题"><span class="post-toc-number">1.8.2.</span> <span class="post-toc-text">使用前缀解决命名冲突问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用命名空间"><span class="post-toc-number">1.8.3.</span> <span class="post-toc-text">使用命名空间</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于schema中属性"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">关于schema中属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#XML编码"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">XML编码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#将XML文档载入数据岛"><span class="post-toc-number">1.11.</span> <span class="post-toc-text">将XML文档载入数据岛</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#行为——什么是行为？"><span class="post-toc-number">1.12.</span> <span class="post-toc-text">行为——什么是行为？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#以上-其他的-以后想起来再补充"><span class="post-toc-number">1.13.</span> <span class="post-toc-text">以上,其他的,以后想起来再补充</span></a></li></ol></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		<!-- Custom Thumbnail -->
+		<div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/random/address/xml.png)">
+	
+        <p class="article-headline-p">
+            XML的完全概要
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Legolas</strong>
+        <span>12月 18, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/xml/">xml</a>
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    <!-- Busuanzi Views -->
+    <a class="post_share-link" href="#">
+        <li class="mdl-menu__item">
+            <span id="busuanzi_container_page_pv">
+                <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+            </span>
+        </li>
+    </a>
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=XML的完全概要&url=http://weidablog.top//2016/12/18/xml/index.html&via=Legolas" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://weidablog.top//2016/12/18/xml/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=XML的完全概要&url=http://weidablog.top//2016/12/18/xml/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
+</div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<p>额,以下内容是我自己对自己学习xml的一个总结,方便回头抽空看两眼记忆的.<br>如果可以帮到你,也算是意外惊喜了<a id="more"></a></p>
+<h1 id="XML的概要"><a href="#XML的概要" class="headerlink" title="XML的概要"></a><center>XML的概要</center></h1><hr>
+<h2 id="xml和html"><a href="#xml和html" class="headerlink" title="xml和html"></a><center>xml和html</center></h2><center><br>XML可以用来描述数据，重点是‘数据是什么’。<br>HTML则是用来显示数据，重点是‘如何显示数据’。<br><br>XML是用来存放数据的<br>XML不是HTML的替代品，XML和HTML是两种不同用途的语言。<br>XML是被设计用来描述数据的，重点是：什么是数据，如何存放数据。<br>HTML是被设计用来显示数据的，重点是：显示数据以及如何显示数据更好上面。<br>HTML是与显示信息相关的, XML则是与描述信息相关的<br></center>
+
+<h2 id="XML-什么也不做"><a href="#XML-什么也不做" class="headerlink" title="XML 什么也不做"></a><center>XML 什么也不做</center></h2><center><br>XML 被设计成什么都不做的。<br>也许看起来很难理解，但事实上XML确实什么都不做。XML只是用来组织、存储和发送信息的。<br>下面的例子是Ordm给Lin的便条，使用的是XML格式：<br><br>XML标记并不是预先规定好的，你必须创造你自己的标记。<br><br>XML并不是HTML的替代品。<br>XML并不是HTML的替代品，理解这一点非常重要。<br>在将来的网页开发中，XML将被用来描述、存储数据，<br>而HTML则是用来格式化和显示数据的。<br><br>对于XML最好的形容可能是:<br>XML是一种跨平台的，与软、硬件无关的，处理信息的工具。<br><br>通过XML,你可以在HTML文件之外存储数据。<br>在不使用XML时，HTML用于显示数据，<br>数据必须存储在HTML文件之内；<br>使用了XML，数据就可以存放在分离的XML文档中。<br>这种方法可以让你集中精力去到使用HTML做好数据的显示和布局上，<br>并确保数据改动时不会导致HTML文件也需要改动。<br>这样可以方便维护页面。<br><br><b><br>通过XML,我们可以在不兼容的系统之间交换数据。<br>在XML文档中, 忽略结束标记是不符合规定的。<br>这与HTML不一样, XML标记是大小写敏感的。<br></b><br></center>
+
+<h2 id="所有的XML文档必须有一个根元素"><a href="#所有的XML文档必须有一个根元素" class="headerlink" title="所有的XML文档必须有一个根元素"></a><center>所有的XML文档必须有一个根元素</center></h2><center><br>XML文档中的第一个元素就是根元素。<br>xml中的空白会被解析保留<br>XML确实没有什么特别的地方。<br>他只是一些用尖括号扩在一起的普通的纯文本。<br>编辑普通文本的软件也可以编辑XML文档。<br>然而在一个支持XML的应用程序中，<br>XML标记往往对应着特殊的操作，<br>有些标记可能是可见的，<br>而有些标记则可能不会显示出来，<br>而不会有什么特殊的操作。<br><br>在HTML中 (在XML中也一样)元素的属性提供了元素的额外信息<br><br>在xml的使用中,我们应该做到尽量的避免使用属性<br>在这里列举一些属性包含的问题<br>1.属性不能包含多个值（子元素可以）。<br>2.属性不容易扩展。<br>3.属性不能够描述结构（子元素可以）。<br>4.属性很难被程序代码处理。<br>5.属性值很难通过DTD进行测试。<br>如果使用属性来存储数据，<br>那么所编写的XML文档一定很难阅读和操作。<br>尽量使用元素来描述数据，<br>仅使用属性来描述那些与数据关系不大的额外信息。<br><br>‘当然,凡事都应该有例外<br>有些时候应该为一个元素设计一个ID引用，<br>通过这个ID可以引用存取特定的XML元素，就象HTML中的name和id属性一样<br>符合语法的XML文档称为结构良好的XML文档。<br>通过DTD验证的XML文档称为有效的XML文档。<br><br>在xml技术中，我们可以编写一个文档来约束一个xml文件的书写的内容规范，<br>这个就称之为xml约束。<br><br>简单说，约束就规定了xml文件中可以写什么，不可以写什么。<br></center>
+
+
+<h2 id="what-is-DTD"><a href="#what-is-DTD" class="headerlink" title="what is DTD?"></a><center>what is DTD?</center></h2><center><br><a href="http://www.runoob.com/dtd/dtd-tutorial.html" target="_blank" rel="external">DTD</a><br>DTD元素<br><br>       格式1&lt;!ELEMENT 元素名称 类别&gt;<br>       格式2 &lt;!ELEMENT 元素名称 (元素内容)&gt;<br>       在dtd中特殊符号:<br>              ?  表示对象可以出现，但是只能出现一次。<br>              *表示对象可以出现0次或多次<br>              +表示对象可以出现1次或多次。<br>              ()用于元素分组<br>              ｜表示在列出的对象中选择一个<br>              ,（逗号）表示该对象必须按照指定的顺序出现。<br>       元素类别<br>       #PCDATA<br>              表示元素可以包含任意字符，但是不能是子元素。<br>       ANY<br>              表示可以是任意的内容<br>       EMPTY<br>              表示元素不可以包含任何内容，只能使用属性。<br></center>
+
+<h2 id="SCHEMA约束"><a href="#SCHEMA约束" class="headerlink" title="SCHEMA约束"></a><center>SCHEMA约束</center></h2><center><br>       Schema约束它是dtd替代者。Schema约束文件的后缀名是xsd<br>       Dtd与schema区别<br>1.dtd不遵守xml语法，而schema它遵守xml语法，它本质上就是一个xml<br>2.dtd数据类型不完善，而schema它有丰富数据类型<br>3.dtd只能有一个应用于xml文件，使用schema可以多个schema约束xml文件。<br></center>
+
+
+<h2 id="CDATA区域"><a href="#CDATA区域" class="headerlink" title="CDATA区域"></a><center>CDATA区域</center></h2><center><br>xml通常情况下会处理xml内的所有文本<br>CDATA区域中的内容不会被解析，而是原样展示。<br>例如<code>&lt;![CDATA[&quot; 标记开始，以&quot;]]&gt;&quot;</code><br><br>CDATA部件之间不能再包含CDATA部件（不能嵌套）。<br>如果CDATA部件包含了字符”]]&gt;” 或者”&lt;![CDATA[“ ，将很有可能出错哦。<br></center>
+
+<h2 id="使用XSL来显示XML文档"><a href="#使用XSL来显示XML文档" class="headerlink" title="使用XSL来显示XML文档"></a><center>使用XSL来显示XML文档</center></h2><center><br>XSL是XML的可扩展样式单语言。<br>XSL (全称是：可扩展的样式单语言，<br>the eXtensible Stylesheet Language)比CSS样式单功能要强大的多。<br>XSL的一个主要的用途就是将XML文档转换成HTML格式的文件，<br>然后再交付给浏览器，由浏览器显示转换的结果:<br></center>
+
+<h2 id="名称空间-命名空间"><a href="#名称空间-命名空间" class="headerlink" title="名称空间(命名空间)"></a><center>名称空间(命名空间)</center></h2><h3 id="命名冲突"><a href="#命名冲突" class="headerlink" title="命名冲突"></a><center>命名冲突</center></h3><center><br>因为XML文档中使用的元素不是固定的，<br>那么两个不同的XML文档<br>使用同一个名字来描述不同类型的元素的情况就可能发生。<br>而这种情况又往往会导致命名冲突<br></center>
+
+<h3 id="使用前缀解决命名冲突问题"><a href="#使用前缀解决命名冲突问题" class="headerlink" title="使用前缀解决命名冲突问题"></a><center>使用前缀解决命名冲突问题</center></h3><center><br>不同属性的同名标签加上前缀<br><code>&lt;h:table&gt;</code><br></center>
+
+<h3 id="使用命名空间"><a href="#使用命名空间" class="headerlink" title="使用命名空间"></a><center>使用命名空间</center></h3><center><br>例如在重名标签下<br><code>&lt;f:table xmlns:f=&quot;http://www.w3schools.com/furniture&quot;&gt;</code><br>我们管xsd文件叫做模式文档(约束文档),管xml文件，实例文档。<br>编写一个xml shcema约束文档后，<br>通常需要将这个文件中声明的元素绑定到一个URI地址上，<br>在xml schema技术中我们管这个过程叫做将声明的元素绑定到名称空间。<br>以后，我们的xml文件被解析引擎解析时，<br>可以知道我们这些xml文件中的元素来自哪里，<br>被谁约束。<br></center>
+
+<h2 id="关于schema中属性"><a href="#关于schema中属性" class="headerlink" title="关于schema中属性"></a><center>关于schema中属性</center></h2><center><br><code>&lt;attruibute name=””  type=”” use=””&gt;</code><br>Name属性名称<br>Type 属性类型<br>Use 可取值有三个<br>       Required 必须<br>       Optional 是可选值<br>       Prohibited 无属性值<br><code>&lt;attribute name=&quot;category&quot; type=&quot;string&quot; use=&quot;required&quot;/&gt;</code><br></center>
+
+<h2 id="XML编码"><a href="#XML编码" class="headerlink" title="XML编码"></a><center>XML编码</center></h2><center><br>XML文档可以包含外文字符比如挪威语或者法语<br>中文当然也可以！<br>使用一种支持Unicode编码格式的编辑器。<br>确信你知道自己正在使用那种编码格式。<br>在XML文档中使用属性声明设置编码格式。<br>对于中文,我们的建议当然是utf-8<br></center>
+
+<h2 id="将XML文档载入数据岛"><a href="#将XML文档载入数据岛" class="headerlink" title="将XML文档载入数据岛"></a><center>将XML文档载入数据岛</center></h2><center><br>数据岛可以访问XML文件。<br>通过数据岛，可以把XML文档引入到HTML页面中。<br><code>&lt;xml src=&quot;cd_catalog.xml&quot; id=&quot;xmldso&quot; async=&quot;false&quot;&gt;</code><br><br>使用上面示例代码，<br>可以把cd_catalog.xml文件载入一个叫”xmldso”的数据岛中。<br>属性async=”false”的作用是在HTML处理器开始处理XML数据以前，<br>必须确保XML文档中的所有数据都被载入到内存中。<br><br>把数据岛绑定到<code>&lt;span&gt;</code> 或者<code>&lt;div&gt;</code> 元素上<br><br><code>&lt;span&gt;</code>或<code>&lt;div&gt;</code>元素都可以用来显示XML数据。<br>没有必要使用table元素来显示XML数据，<br>数据可以通过数据岛绑定到任何一个HTML元素上。<br>所要做的就是在你得页面中添加一些<span> 或者<div>元素，<br>使用数据资源属性把每一个元素和XML文档元素绑定起来，<br>就象下面这样:<br>    <code>&lt;br /&gt;Title:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;TITLE&quot;&gt;&lt;/span&gt;</code><br>    <code>&lt;br /&gt;Artist:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;ARTIST&quot;&gt;&lt;/span&gt;</code><br>    <code>&lt;br /&gt;Year:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;YEAR&quot;&gt;&lt;/span&gt;</code><br></div></span></center>
+
+<h2 id="行为——什么是行为？"><a href="#行为——什么是行为？" class="headerlink" title="行为——什么是行为？"></a><center>行为——什么是行为？</center></h2><center><br>行为是一个新的CSS属性<br>行为属性可以指向一个分离的XML文件，这个XML文件包含了能够改变XML或者HTML页面的元素或显示样式的脚本代码。<br></center>
+
+<h2 id="以上-其他的-以后想起来再补充"><a href="#以上-其他的-以后想起来再补充" class="headerlink" title="以上,其他的,以后想起来再补充"></a><center>以上,其他的,以后想起来再补充</center></h2>
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="2016/12/18/xml/" 
+            data-url="http://weidablog.top/2016/12/18/xml/"
+            data-title="XML的完全概要"></div>
+    <!-- 多说评论框 end -->
+</div>
+
+
+
+            </div>
+		
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+        <a href="/2016/12/21/threebody/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/12/17/essay02/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Legolas's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        weida0516@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="https://mail.google.com" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+	
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">13</span></a>
+        </ul>
+    </li>
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+		<li>
+			<a href="/tags/" title="标签">
+				标签
+			</a>
+		</li>
+	
+		<li>
+			<a href="/gallery/" title="时光轴">
+				时光轴
+			</a>
+		</li>
+	
+		<li>
+			<a href="/me/" title="关于我">
+				关于我
+			</a>
+		</li>
+	
+		<li>
+			<a href="/guestbook/" title="最近访客">
+				最近访客
+			</a>
+		</li>
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">13</span>
+        </a>
+    </li>
+</ul>
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+-->
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    <a href="https://twitter.com/twitter" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+        <span class="visuallyhidden">Twitter</span>
+    </button></a>
+    
+    
+    <!-- Facebook -->
+    
+    <a href="https://www.facebook.com/facebook" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+        <span class="visuallyhidden">Facebook</span>
+    </button></a>
+    
+    
+    <!-- Google + -->
+    
+    <a href="https://www.google.com/" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+        <span class="visuallyhidden">Google Plus</span>
+    </button></a>
+    
+    
+    <!-- Weibo -->
+    
+    
+    
+    <!-- Instagram -->
+    
+    
+    
+    <!-- Tumblr -->
+    
+    
+    
+    <!-- Github -->
+    
+    <a href="https://github.com/xwdMrBear" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+        <span class="visuallyhidden">Github</span>
+    </button></a>
+    
+</div>
+
+
+		<!--Copyright-->
+		<div>
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;X</div>	
+		<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<div>
+		本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+		你是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+		</div>
+		</div>
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/highlight.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+
+<!-- MathJax Load-->
+
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>

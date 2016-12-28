@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Merry Christmas]]></title>
+      <url>http://weidablog.top/2016/12/26/MerryChristmas/</url>
+      <content type="html"><![CDATA[<p>又是一个没有雪的冬天<a id="more"></a></p>
+<center><br><br>在华中地区武汉<br>是一个从来不会下雪的城市<br>但这应该是全中国冬天最冷的地方<br><br>往年的每个圣诞,我现在都已经记不起来了<br>倒不是我记性不好<br>我想大概是没有什么特别之处<br>可以给予我值得的留恋<br><br>生活过的像水一样<br>记忆自然也是波澜不惊<br><br>唯一值得记住的,大概是某年冬天<br>室友进了一堆苹果<br>打算在平安夜大干一场<br>结果当然是剩了一堆<br>最后兄弟们你两个我三个给帮忙解决了<br>虽然没赚到什么钱,但是<br>这大概是关于这个节日对于我<br>印象最深刻的一次<br><br>大学同窗的笑容,自离开后<br>也很少去回味了<br><br>至于后来,以前,<br>发现真的半点记忆也没有<br>我想<br>关于这个节日的热闹,是他们的,与我无关<br>我本来就不爱凑热闹<br>何况外国人的热闹<br><br>但是,2016年<br>这个圣诞节<br>我想,我应该很难忘记<br><br><img src="/img/20161225/1.jpg" alt="1"><br><br><img src="/img/20161225/2.jpg" alt="2"><br><br><img src="/img/20161225/3.jpg" alt="3"><br><br><img src="/img/20161225/4.jpg" alt="4"><br><br><img src="/img/20161225/5.jpg" alt="5"><br><br><img src="/img/20161225/6.jpg" alt="6"><br><br><img src="/img/20161225/7.jpg" alt="7"><br><br><img src="/img/20161225/8.jpg" alt="8"><br><br><img src="/img/20161225/9.jpg" alt="9"><br><br><br>一年前玩摄影的lofter.<br><a href="http://m188648373571.lofter.com/" target="_blank" rel="external">lofter</a><br><br><br></center>
+
+
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python笔记(二)]]></title>
+      <url>http://weidablog.top/2016/12/24/python02/</url>
+      <content type="html"><![CDATA[<p>接着上次<a id="more"></a></p>
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a><center>输入</center></h2><center><br>现在，你已经可以用print()输出你想要的结果了。<br>但是，如果要让用户从电脑输入一些字符怎么办？<br>Python提供了一个input()，可以让用户输入字符串，<br>并存放到一个变量里。比如输入用户的<br>&gt;&gt;&gt;name = input()<br>/<em>输入你要输入的数据,例如</em>/<br>张全蛋<br>但是程序运行的时候，没有任何提示信息告诉用户：<br>“嘿，赶紧输入你的名字”，这样显得很不友好。<br>幸好，input()可以让你显示一个字符串来提示用户，于是我们把代码改成：<br><code>name = input(&#39;please enter your name: &#39;)</code><br><code>print(&#39;hello,&#39;, nam</code><br></center>
+
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a><center>输出</center></h2><center><br>再次运行这个程序，你会发现，程序一运行，<br>会首先打印出please enter your name:，<br>这样，用户就可以根据提示，输入名字后，得到hello, xxx的输出：<br><code>C:\Workspace&gt; python hello.py</code><br><code>please enter your name: Michael</code><br><code>hello, Michael</code><br><br></center>
+
+<center><br><code># print absolute value of an integer:</code><br><code>a = 100</code><br><code>if a &gt;= 0:</code><br> <code>print(a)</code><br><code>else:</code><br> <code>print(-a)</code><br>以#开头的语句是注释，注释是给人看的，<br>可以是任意内容，解释器会忽略掉注释。<br>其他每一行都是一个语句，当语句以冒号:结尾时，<br>缩进的语句视为代码块。<br>缩进有利有弊。好处是强迫你写出格式化的代码，<br>但没有规定缩进是几个空格还是Tab。<br>按照约定俗成的管理，应该始终坚持使用4个空格的缩进。<br>缩进的另一个好处是强迫你写出缩进较少的代码，<br>你会倾向于把一段很长的代码拆分成若干函数，<br>从而得到缩进较少的代码。<br>缩进的坏处就是“复制－粘贴”功能失效了，<br>这是最坑爹的地方。当你重构代码时，<br>粘贴过去的代码必须重新检查缩进是否正确。<br>此外，IDE很难像格式化Java代码那样格式化Python代码。<br>最后，请务必注意，Python程序是大小写敏感的，如果写错了大小写，程序会报错。<br><br><br>好吧,懒癌犯了,很多东西很杂乱,明天再更!!<br><br><br><br></center>
+
+<h2 id="睡觉"><a href="#睡觉" class="headerlink" title="睡觉!!"></a><center>睡觉!!</center></h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python笔记(一)]]></title>
+      <url>http://weidablog.top/2016/12/22/python01/</url>
+      <content type="html"><![CDATA[<p>嗯,如题<a id="more"></a></p>
+<center><br>    在网上看了一个关于爬虫的帖子,感觉很有趣<br>    于是原本打算用lucene+solr做一个<br>    但是感觉的略复杂,加上网上关于爬虫百分之七十<br>    (这个数据室推测的,没有依据)<br>    是用python来做<br>    于是自己也打算学习一下,<br>    打算从现在开始写一个长期贴<br>    来记录本人学习python的总结,和走的一些弯路<br>    权当个人笔记,<br><br></center>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><center>安装</center></h2><center><br>那就从安装开始讲,正儿八经的初学者.<br><br>讲道理我的电脑是windows,于是在网上下载了一个python3.5.1<br>貌似python2和python3的差别很大,<br>而且当初再出新版本的时候,<br>考虑到了效率,python并没有向下兼容<br>所以安装之前一定要考虑清楚<br>在这里,我的建议是装python3版本以上的<br>具体为什么,<br>别问我,我也不知道<br><br>然后安装时可以勾选自动配环境变量,之后默认就可以了<br><br>按道理此时应该是装好了<br>但是我在实际操作过程中,一直在缺失一个kb2999226的服务<br>导致我安装失败了好几次,然后停掉了windows update也没用<br><br>我一气之下把python安装到了linux中<br><br>linux系统其实是自带python的<br>但是因为版本太低,所以建议装一个python3<br><br>在这里,我默认你会使用linux<br>所以解压好之后<br>依次在跟文件夹输入<br><code>./configure</code><br><code>make</code><br><code>make install</code><br>因为考虑到权限,我建议使用root管理员安装<br><br>当安装好之后,在命令框中输入python3<br>此时出现如下反馈<br><img src="/img/python/python03.png" alt="pythom3"><br><br>恭喜你,安装成功<br></center>
+
+<hr>
+<center><br>华丽的分割线<br><br>此时,我发现原来还有一种计算机语言可以简洁高效的令人发指<br>敲完第一个helloworld之后 我发现我已经爱上了这门语言<br><br>相比于系统庞大的java,<br>python显得小巧而强大<br><br>好了,废话就这么多.<br><br>以上<br><br></center>
+
+
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[宇宙社会学]]></title>
+      <url>http://weidablog.top/2016/12/21/threebody/</url>
+      <content type="html"><![CDATA[<p>最近没有在偷懒,只是把所有的闲暇时间都拿来看小说了<a id="more"></a></p>
+<center><br>博客没有什么更新,最主要的原因<br>是我最近在学习linux,<br>虽然这个操作系统传奇般的诞生经历以及世人的广大称赞,<br>可是我目前还没有感觉到<br>这个操作系统和其他操作系统所带来的不同的便利性<br>也许是因为我只是个初学者,<br>目前所接触到的仅仅是皮毛而已<br><br>也可能是因为我只是装了一个CtenOS的镜像虚拟机,<br>还没有在电脑上安装一个真正意义上的linux<br>目前只停留在一遍一遍在SecureCRT熟悉各种命令<br>我知道在linux上,我未来还有很长的路要走,<br>(当然,这些不是今天的重点)<br>今天顺手装了一下redis,熟悉了一下,感觉还不错.<br>于是,其余的闲暇时间,终于把我最近在看的黑暗森林看完了<br>(其实只是不想学东西,偷个懒而已…)<br><br>黑暗森林是刘慈欣地球往事三部曲的第二部<br>这本书还有一个响亮的名字<br>就是获得了第73届雨果奖也就是文学界的诺贝尔的三体<br><br>关于书的详细介绍网上有很多,<br>在这里我只谈下自己的感受<br><br>只是感受,谈不上看法,因为我已经被这部作品折服,<br><br></center>
+
+<h2 id="首先"><a href="#首先" class="headerlink" title="首先"></a><center>首先</center></h2><center><br>首先我想说的是,真的很幸运,我看的第一部科幻作品是刘慈欣的三体<br><br>我之前对科幻题材不是很感冒<br>在中学时期喜欢武校小说<br>金梁古,几百本书也不知道看了多少遍<br><br>后来迷上了推理小说<br>江户川乱步,横沟正史等等<br>其中也一直很喜欢历史小说<br>总而言之.乱七八糟的书看过不少,网络小说也看了几本<br><br>但就是没有一部科幻.<br><br>我看完第二部黑暗森林之后我去豆瓣知乎找了一些书评来看<br>我原本以为这本书写的这么棒又拿了大奖,网上应该是好评如潮<br>但是事实我大失所望<br>网上有很多人说这本书除掉硬派科幻的外衣文笔一塌糊涂,人物描写苍白宇宙框架吹的很大但是内容空洞等等<br>我看了十分气愤<br>倒不是我个人喜欢这本书,爱屋及乌,连吐槽这本书的评论都看不下去.<br>只是因为网上的评论三言两语给作品下定论<br>所列举的毛病也十分笼统,甚至连一个能拿出具体例子的人都没有.<br>吐槽也是千篇一律,跟风嫌疑极大,更加可恶的,有一些看了一半没看的也好意思腆着个脸来评论.<br>对于这种人,<br>毛主席说过,没有调差就没有发言权,<br>想喷也麻烦先去看一遍好嘛.<br><br>我有个不怀好意的推测,我觉得也许这帮人是因为三体名气太大,如果自己也是跟随主流观点<br>岂不埋没了我的才华,索性就挑点毛病出来,但可惜这毛病挑的也是十分苍白空洞<br></center>
+
+<h2 id="其次"><a href="#其次" class="headerlink" title="其次"></a><center>其次</center></h2><center><br>抛开作品本身,书中给我最大的影响也许是作者天马行空的想象力所塑造的宇宙哲学<br><br>黑暗森林法则,确实让我很感兴趣<br>人类像一个蹒跚学步的婴儿行走在宇宙中<br>不熟悉森林法则,于是在宇宙中大呼小叫,企图让大家注意到自己,一起建造一个和平的大同世界<br><br>这个只存在于幻想之中,生存是物种的第一要素<br>一旦陷入了作者所说的猜疑链中,宇宙中是没有安全可言的<br><br>但是如果真的如同作者所言,那么宇宙中是否最后只会有一个文明存活下来<br><br>我摘抄了几个我觉得比较好的观点,均来自知乎<br></center>
+
+
+<blockquote>
+<ol>
+<li>宇宙资源有限；</li>
+<li>文明发展对资源的消耗呈指数级增长；</li>
+<li>（不同层级文明之间）战争的胜负只取决于技术能力；</li>
+<li>生存是文明的第一需要；</li>
+<li>存在技术爆炸的现象；</li>
+<li>无差别打击比交流的成本低的多；<br>推理1. 几乎的文明都希望别的文明死，自己活（几乎所有的文明都是恶意的）。<br>推理2. 和灭掉别的文明相比，一个恶意文明更在乎自己是否能生存下去。<br>如果已知：宇宙中有一个低等文明，具体来说就是地球，被一万个高等文明发现，问地球的现状。<br>地球能否存活，要看其他高等文明的反应：<br>如果这个文明是冷静克制理性的，那么它会做如下思考：我自然希望地球文明灭亡，但出手的不应该是我。因为缺乏交流，我不知道我在宇宙中的科技地位（也许只比地球高那么一点点），我出手会增大我在别的神级文明的眼中被发现的概率，暴露显然比隐藏更危险。我不出手有可能会因为地球技术爆炸而被超过，但那时地球也会做如上思考，如果地球是冷静而克制的，它将不会出手，但如果他是暴躁而嗜杀的，我就面临被它击杀的危险，但是，宇宙中有很多文明，而我只是其中一个，不一定会被当作第一个攻击目标。（或者换个方向思考，我出手，将为全宇宙所有其他文明带来福利，自私的文明一定不会去这么做，除非有证据表明将有直接冲突。）如此以来，最明智的做法是发展隐藏自身的科技，而不是去攻击别的文明。<br>如果这个文明是暴力而嗜杀的，他将开枪将地球灭掉。但开枪会增大他被发现的概率（技术手段即会如此，没有完美的隐藏，也没有完美的谋杀）。如果他被发现，将有两种可能：一、只是单纯被发现（即原有的概率）。二、因攻击地球而被发现。如果是这种情况，发现者将会这样思考：已经证明此文明的暴力倾向概率较高。所以如果我们被它发现，将有很大概率被他攻击。如果发现者能力较低，将会保持不动。如果能力远高于暴力文明，将会考虑是否将其灭亡（考虑到技术爆炸的可能）。当然，他们会考虑来自更高文明的威胁，也可能选择不动。但总之，猎手文明被射杀的概率将较懦夫文明为高。<br>综上所述，猎手基因在文明中属于不利基因，将在所有的文明中保持一个较低水平。而懦夫基因（就是保持不动）将在文明中保持一个较高水平。那么这样的一个宇宙恰巧是现有宇宙的描述。可能有几百万个文明已经发现了地球文明，但是宇宙的战争历史告诫他们，不要动，否则，吃亏的可能是你自己。他们每个人都看不到对方（或者很难看到），但每个人都能看到地球文明这个二逼在快乐成长，但没有人动手。</li>
+</ol>
+<p>第一，不同宇宙文明，思维模式有本质的差异。<br>透明思维的文明，并不会妄想猜疑链问题。比如三体文明。无法确定宇宙文明中开放性思维文明的比例，无法事先认定猜疑链普遍存在于整个宇宙文明。</p>
+<p>第二：猜疑链的链条两端是一种对等关系， 也就是说当两个文明相遇的时候， 双方的实力越接近，越可能产生猜疑链，当双方力量有质的差距的时候，猜疑链无法产生。–主不在乎。<br>文明进化的跨度贯穿整个时空轴，文明之间的技术/探知能力是严重不对等的，甚至差异超过你我的想象力。两个程度相近的文明相遇的可能性是非常苛刻的，在那之前他们会被更高等级的文明发现。</p>
+<p>第三：对于高等文明来说，攻击的成本低于探测的成本.<br>这个姑且算是对的。<br>但是攻击带给自身的危险，必然会远远超过探测产生的危险。<br>黑暗森林中有个傻孩子坐在篝火边唱歌，无数双猎人的眼睛盯着他。<br>你会开枪吗？<br>篝火边的孩子，或许算是一个潜在的危险。<br>但是开枪射杀他的文明，在任何人眼中都是SSS级的危险。<br>其他高等文明有可能会主动搜寻这个袭击者的位置<br>关于是否暴露自己的位置，有种种辩解<br>但是—-弱小和无知不是生存的障碍，傲慢才是。<br>你无法理解，甚至无法想象的文明，对你来说就是高等文明<br>即使你用你最高的技术，最巧妙的掩饰。<br>在你所知的知识体系中，有种种理论支持。<br>在更高层次的文明眼中—你开枪的时候，也许和点起篝火的孩子没有两样。<br>生存如果是文明的第一要素。<br>那在黑暗森林中的文明， 不会假定，攻击的前后，自己是百分之百安全的。<br>它们要权衡的是，视野中可探测的弱小种子，与身后浩渺深邃的黑暗星空哪一个更可怕的问题。<br>有权衡，就不会是肆无忌惮的杀人狂。</p>
+<p>第四：并不是别无选择。<br>书中其实已经给我们指出了第三条路。<br>三体利用技术手段，能够将人类世界的探知可逆和技术爆炸变成可控状态。<br>从实际情况看，探知可逆什么的完全是无谓的操心。<br>三体世界是有足够的能力，改造人类世界的。<br>它所缺少的只是时间而已。<br>因为时间紧迫，调控人类文明的过程过于简单粗暴，才引发了人类的危机感和后面的故事。<br>试想一下，如果比三体世界更为高等的文明，有着足够的时间。<br>它可以用更为巧妙的方式渗透到人类世界。<br>控制世界范围的社会形态，人类科技发展的方向和速度，甚至改变星球的气候，地质环境，运行轨道，土著生命的进化方向……<br>在黑暗森林中任何暴露都可能带来不必要的危险。<br>星际文明之间的最为合理的战争模式，就要尽可能的低调。<br>那么真正的星战或许会是—-文明渗透。<br>所谓技术爆炸也许只是文明渗透最后的结果。</p>
+<p>第五：什么是技术爆炸？<br>逻辑推导中出现任何无逻辑的东西都是硬伤。<br>比如黑暗森林的技术爆炸。<br>作者未作解释，为什么文明会出现技术爆炸？<br>技术爆炸，科幻小说中这个名词不算新鲜了。<br>几乎都是一样的桥段，敌人很强大，但我们的文明技术发展速度是加速的，外星科技是匀速的，如此如此…..<br>每每读到这样的情节，身为人类的优越感油然而生。<br>作为YY小说可以理解，但如果暂时抛开人类可悲的自大感，来为技术爆炸思索一个合理的解释的话。<br>【一个问题】<br>如果三体世界的科技，通过降临派流传到人类世界，大幅改变地球文明形态……<br>以无知的人类视角来观察，这是地球文明的技术爆炸吗？<br>既然技术爆炸并不是基于逻辑的必然事件。我们仅仅可以确认的是，高等文明暗中介入低等文明的过程，会产生技术爆炸的效果。<br>那么我们如何确定，人类世界正在发生的技术爆炸是完全自发的？而不是某个高等文明的渗透进程……</p>
+<p>三体的人类历史设定是照着现实世界来的，但最根本的区别是三体故事中确认了外星高等文明的存在，高等文明的渗透。<br>现实世界至今还没有有效的证据证明外星文明存在，如无必要，勿增实体，所以将技术爆炸归为自身，是唯一明智的理论了。（事实上，低等文明被渗透过程观察不到高等文明的存在才是常理）<br>而三体中已证实外星高等文明的存在，高等文明的渗透可能。技术爆炸为高等文明渗透，相比之下就逻辑上更简洁，因果更明确。<br>技术爆炸，到底是因？还是果？<br>把它作为推理的关键一环，那么这个推理有多大的说服力？<br>第六：就文中的设定。<br>存在多维度文明，高纬度碎片，在高纬度穿梭的经历，维度技术。<br>高维跳跃的技术是有十分的可能性的。<br>对于高等级文明来说距离并不是无解的。<br>现在的我们思维封闭，现在的我们无法解决猜疑链问题。现在的我们有技术爆炸，现在的我们科技里空间旅行会耗费大量的时间。<br>但是同时，现在的我们也没有能力进行实质的宇宙宇宙文明交流。</p>
+<p>我们在宇宙中弱小，迷茫，无知，恐惧，所以会臆想出这样的问题。<br>但是宇宙文明的秩序，不是由我们这样的弱小文明决定的。<br>而等到我们的科技有能力跨越那一步的时候，文明会质变，视角也也会变了。<br>思维封闭，技术问题。<br>猜疑链，技术问题。<br>空间距离过远，技术问题。<br>探知可逆，技术问题。<br>技术爆炸……<br>当这些问题不是问题的时候，你会选择攻击吗？ </p>
+</blockquote>
+<p>以上</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a><center>最后</center></h2><center><br>我想说的是目前为止,在整个三体作品中,我最喜欢的人物是章北海<br><br>这个人几乎是一个完美的化身<br>沉着冷静,目光独到,也不优柔寡断,善于学习,能隐忍.但是又具有一个标准军人的品质<br><br>不管是刺杀,还是带领自然选择号逃离,到最后打算诛杀其他船上的成员<br><br>章北海的思维犹如造物主一样,我觉得他是完美的,也许他最大的缺陷就是完美<br><br><br><br><br>好了,暂时说这么多,我继续把第三部看完<br><br><br></center>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[XML的完全概要]]></title>
+      <url>http://weidablog.top/2016/12/18/xml/</url>
+      <content type="html"><![CDATA[<p>额,以下内容是我自己对自己学习xml的一个总结,方便回头抽空看两眼记忆的.<br>如果可以帮到你,也算是意外惊喜了<a id="more"></a></p>
+<h1 id="XML的概要"><a href="#XML的概要" class="headerlink" title="XML的概要"></a><center>XML的概要</center></h1><hr>
+<h2 id="xml和html"><a href="#xml和html" class="headerlink" title="xml和html"></a><center>xml和html</center></h2><center><br>XML可以用来描述数据，重点是‘数据是什么’。<br>HTML则是用来显示数据，重点是‘如何显示数据’。<br><br>XML是用来存放数据的<br>XML不是HTML的替代品，XML和HTML是两种不同用途的语言。<br>XML是被设计用来描述数据的，重点是：什么是数据，如何存放数据。<br>HTML是被设计用来显示数据的，重点是：显示数据以及如何显示数据更好上面。<br>HTML是与显示信息相关的, XML则是与描述信息相关的<br></center>
+
+<h2 id="XML-什么也不做"><a href="#XML-什么也不做" class="headerlink" title="XML 什么也不做"></a><center>XML 什么也不做</center></h2><center><br>XML 被设计成什么都不做的。<br>也许看起来很难理解，但事实上XML确实什么都不做。XML只是用来组织、存储和发送信息的。<br>下面的例子是Ordm给Lin的便条，使用的是XML格式：<br><br>XML标记并不是预先规定好的，你必须创造你自己的标记。<br><br>XML并不是HTML的替代品。<br>XML并不是HTML的替代品，理解这一点非常重要。<br>在将来的网页开发中，XML将被用来描述、存储数据，<br>而HTML则是用来格式化和显示数据的。<br><br>对于XML最好的形容可能是:<br>XML是一种跨平台的，与软、硬件无关的，处理信息的工具。<br><br>通过XML,你可以在HTML文件之外存储数据。<br>在不使用XML时，HTML用于显示数据，<br>数据必须存储在HTML文件之内；<br>使用了XML，数据就可以存放在分离的XML文档中。<br>这种方法可以让你集中精力去到使用HTML做好数据的显示和布局上，<br>并确保数据改动时不会导致HTML文件也需要改动。<br>这样可以方便维护页面。<br><br><b><br>通过XML,我们可以在不兼容的系统之间交换数据。<br>在XML文档中, 忽略结束标记是不符合规定的。<br>这与HTML不一样, XML标记是大小写敏感的。<br></b><br></center>
+
+<h2 id="所有的XML文档必须有一个根元素"><a href="#所有的XML文档必须有一个根元素" class="headerlink" title="所有的XML文档必须有一个根元素"></a><center>所有的XML文档必须有一个根元素</center></h2><center><br>XML文档中的第一个元素就是根元素。<br>xml中的空白会被解析保留<br>XML确实没有什么特别的地方。<br>他只是一些用尖括号扩在一起的普通的纯文本。<br>编辑普通文本的软件也可以编辑XML文档。<br>然而在一个支持XML的应用程序中，<br>XML标记往往对应着特殊的操作，<br>有些标记可能是可见的，<br>而有些标记则可能不会显示出来，<br>而不会有什么特殊的操作。<br><br>在HTML中 (在XML中也一样)元素的属性提供了元素的额外信息<br><br>在xml的使用中,我们应该做到尽量的避免使用属性<br>在这里列举一些属性包含的问题<br>1.属性不能包含多个值（子元素可以）。<br>2.属性不容易扩展。<br>3.属性不能够描述结构（子元素可以）。<br>4.属性很难被程序代码处理。<br>5.属性值很难通过DTD进行测试。<br>如果使用属性来存储数据，<br>那么所编写的XML文档一定很难阅读和操作。<br>尽量使用元素来描述数据，<br>仅使用属性来描述那些与数据关系不大的额外信息。<br><br>‘当然,凡事都应该有例外<br>有些时候应该为一个元素设计一个ID引用，<br>通过这个ID可以引用存取特定的XML元素，就象HTML中的name和id属性一样<br>符合语法的XML文档称为结构良好的XML文档。<br>通过DTD验证的XML文档称为有效的XML文档。<br><br>在xml技术中，我们可以编写一个文档来约束一个xml文件的书写的内容规范，<br>这个就称之为xml约束。<br><br>简单说，约束就规定了xml文件中可以写什么，不可以写什么。<br></center>
+
+
+<h2 id="what-is-DTD"><a href="#what-is-DTD" class="headerlink" title="what is DTD?"></a><center>what is DTD?</center></h2><center><br><a href="http://www.runoob.com/dtd/dtd-tutorial.html" target="_blank" rel="external">DTD</a><br>DTD元素<br><br>       格式1&lt;!ELEMENT 元素名称 类别&gt;<br>       格式2 &lt;!ELEMENT 元素名称 (元素内容)&gt;<br>       在dtd中特殊符号:<br>              ?  表示对象可以出现，但是只能出现一次。<br>              *表示对象可以出现0次或多次<br>              +表示对象可以出现1次或多次。<br>              ()用于元素分组<br>              ｜表示在列出的对象中选择一个<br>              ,（逗号）表示该对象必须按照指定的顺序出现。<br>       元素类别<br>       #PCDATA<br>              表示元素可以包含任意字符，但是不能是子元素。<br>       ANY<br>              表示可以是任意的内容<br>       EMPTY<br>              表示元素不可以包含任何内容，只能使用属性。<br></center>
+
+<h2 id="SCHEMA约束"><a href="#SCHEMA约束" class="headerlink" title="SCHEMA约束"></a><center>SCHEMA约束</center></h2><center><br>       Schema约束它是dtd替代者。Schema约束文件的后缀名是xsd<br>       Dtd与schema区别<br>1.dtd不遵守xml语法，而schema它遵守xml语法，它本质上就是一个xml<br>2.dtd数据类型不完善，而schema它有丰富数据类型<br>3.dtd只能有一个应用于xml文件，使用schema可以多个schema约束xml文件。<br></center>
+
+
+<h2 id="CDATA区域"><a href="#CDATA区域" class="headerlink" title="CDATA区域"></a><center>CDATA区域</center></h2><center><br>xml通常情况下会处理xml内的所有文本<br>CDATA区域中的内容不会被解析，而是原样展示。<br>例如<code>&lt;![CDATA[&quot; 标记开始，以&quot;]]&gt;&quot;</code><br><br>CDATA部件之间不能再包含CDATA部件（不能嵌套）。<br>如果CDATA部件包含了字符”]]&gt;” 或者”&lt;![CDATA[“ ，将很有可能出错哦。<br></center>
+
+<h2 id="使用XSL来显示XML文档"><a href="#使用XSL来显示XML文档" class="headerlink" title="使用XSL来显示XML文档"></a><center>使用XSL来显示XML文档</center></h2><center><br>XSL是XML的可扩展样式单语言。<br>XSL (全称是：可扩展的样式单语言，<br>the eXtensible Stylesheet Language)比CSS样式单功能要强大的多。<br>XSL的一个主要的用途就是将XML文档转换成HTML格式的文件，<br>然后再交付给浏览器，由浏览器显示转换的结果:<br></center>
+
+<h2 id="名称空间-命名空间"><a href="#名称空间-命名空间" class="headerlink" title="名称空间(命名空间)"></a><center>名称空间(命名空间)</center></h2><h3 id="命名冲突"><a href="#命名冲突" class="headerlink" title="命名冲突"></a><center>命名冲突</center></h3><center><br>因为XML文档中使用的元素不是固定的，<br>那么两个不同的XML文档<br>使用同一个名字来描述不同类型的元素的情况就可能发生。<br>而这种情况又往往会导致命名冲突<br></center>
+
+<h3 id="使用前缀解决命名冲突问题"><a href="#使用前缀解决命名冲突问题" class="headerlink" title="使用前缀解决命名冲突问题"></a><center>使用前缀解决命名冲突问题</center></h3><center><br>不同属性的同名标签加上前缀<br><code>&lt;h:table&gt;</code><br></center>
+
+<h3 id="使用命名空间"><a href="#使用命名空间" class="headerlink" title="使用命名空间"></a><center>使用命名空间</center></h3><center><br>例如在重名标签下<br><code>&lt;f:table xmlns:f=&quot;http://www.w3schools.com/furniture&quot;&gt;</code><br>我们管xsd文件叫做模式文档(约束文档),管xml文件，实例文档。<br>编写一个xml shcema约束文档后，<br>通常需要将这个文件中声明的元素绑定到一个URI地址上，<br>在xml schema技术中我们管这个过程叫做将声明的元素绑定到名称空间。<br>以后，我们的xml文件被解析引擎解析时，<br>可以知道我们这些xml文件中的元素来自哪里，<br>被谁约束。<br></center>
+
+<h2 id="关于schema中属性"><a href="#关于schema中属性" class="headerlink" title="关于schema中属性"></a><center>关于schema中属性</center></h2><center><br><code>&lt;attruibute name=””  type=”” use=””&gt;</code><br>Name属性名称<br>Type 属性类型<br>Use 可取值有三个<br>       Required 必须<br>       Optional 是可选值<br>       Prohibited 无属性值<br><code>&lt;attribute name=&quot;category&quot; type=&quot;string&quot; use=&quot;required&quot;/&gt;</code><br></center>
+
+<h2 id="XML编码"><a href="#XML编码" class="headerlink" title="XML编码"></a><center>XML编码</center></h2><center><br>XML文档可以包含外文字符比如挪威语或者法语<br>中文当然也可以！<br>使用一种支持Unicode编码格式的编辑器。<br>确信你知道自己正在使用那种编码格式。<br>在XML文档中使用属性声明设置编码格式。<br>对于中文,我们的建议当然是utf-8<br></center>
+
+<h2 id="将XML文档载入数据岛"><a href="#将XML文档载入数据岛" class="headerlink" title="将XML文档载入数据岛"></a><center>将XML文档载入数据岛</center></h2><center><br>数据岛可以访问XML文件。<br>通过数据岛，可以把XML文档引入到HTML页面中。<br><code>&lt;xml src=&quot;cd_catalog.xml&quot; id=&quot;xmldso&quot; async=&quot;false&quot;&gt;</code><br><br>使用上面示例代码，<br>可以把cd_catalog.xml文件载入一个叫”xmldso”的数据岛中。<br>属性async=”false”的作用是在HTML处理器开始处理XML数据以前，<br>必须确保XML文档中的所有数据都被载入到内存中。<br><br>把数据岛绑定到<code>&lt;span&gt;</code> 或者<code>&lt;div&gt;</code> 元素上<br><br><code>&lt;span&gt;</code>或<code>&lt;div&gt;</code>元素都可以用来显示XML数据。<br>没有必要使用table元素来显示XML数据，<br>数据可以通过数据岛绑定到任何一个HTML元素上。<br>所要做的就是在你得页面中添加一些<span> 或者<div>元素，<br>使用数据资源属性把每一个元素和XML文档元素绑定起来，<br>就象下面这样:<br>    <code>&lt;br /&gt;Title:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;TITLE&quot;&gt;&lt;/span&gt;</code><br>    <code>&lt;br /&gt;Artist:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;ARTIST&quot;&gt;&lt;/span&gt;</code><br>    <code>&lt;br /&gt;Year:</code><br>    <code>&lt;span datasrc=&quot;#xmldso&quot; datafld=&quot;YEAR&quot;&gt;&lt;/span&gt;</code><br></div></span></center>
+
+<h2 id="行为——什么是行为？"><a href="#行为——什么是行为？" class="headerlink" title="行为——什么是行为？"></a><center>行为——什么是行为？</center></h2><center><br>行为是一个新的CSS属性<br>行为属性可以指向一个分离的XML文件，这个XML文件包含了能够改变XML或者HTML页面的元素或显示样式的脚本代码。<br></center>
+
+<h2 id="以上-其他的-以后想起来再补充"><a href="#以上-其他的-以后想起来再补充" class="headerlink" title="以上,其他的,以后想起来再补充"></a><center>以上,其他的,以后想起来再补充</center></h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[当我敲代码的时候,我在听些什么?(二)]]></title>
+      <url>http://weidablog.top/2016/12/17/essay02/</url>
+      <content type="html"><![CDATA[<p>Misty(Tsuyoshi Yamamoto)<a id="more"></a></p>
+<h2 id="Misty"><a href="#Misty" class="headerlink" title="Misty"></a><center>Misty</center></h2><center><br>这首曲子仿佛和名字一样,<br>与生俱来拥有一种魔力<br>我暂且称之为如同迷雾一样<br><br>听过若干版本的misty,<br>包括不同乐器演绎的<br>唯独这个三重奏最得我深爱<br><br><img src="/img/guitar/jazz/a.png" alt="a"><br><br><br>著名爵士钢琴演奏家森木崎先生领衔的爵士三重奏组<br>在当代国际乐坛享有盛誉，<br>他们的演奏热情、细腻、刚健而奔放，<br>具有无限的音乐张力，<br>而且在即兴演奏上独具风格和创意。<br>爵士音乐在当代 100多年的发展历程里，<br>无论是曲式、形式、节奏、和声都非常的成熟，<br>走向完美。<br>注重情调、音乐格调、音乐气度、音色在音乐氛围的塑造等因素，<br>在当代已经成为主要的共识和潮流，<br>不同年代都有出现过有代表性的演奏家和乐队组合，<br>他们在多年的磨练融合里形成引领音乐潮流的方向，<br>而森木崎爵士三重奏乐组无疑是他们其中杰出的一员。<br></center>
+
+<center><br><img src="/img/guitar/jazz/b.png" alt="b"><br><img src="/img/guitar/jazz/d.png" alt="d"><br><br>我觉得这首曲子还是不适合敲代码的过程中听,<br>代码敲累了,来一首<br>醒脑提神<br><br><a href="http://music.163.com/#/m/song?id=545882&amp;userid=89647372" target="_blank" rel="external">Misty</a><br><br></center>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于CPU占用率的问题]]></title>
+      <url>http://weidablog.top/2016/12/15/artofcode/</url>
+      <content type="html"><![CDATA[<p>前阵子在一片忘记了名字的文章中发现了一道很有意思的题目,特意在网上把这本书也找了出来,终于耽搁到昨日才有时间拿出来看一看,书的名字稍后再说,<br><a id="more"></a></p>
+<h2 id="一-提出问题"><a href="#一-提出问题" class="headerlink" title="一.提出问题"></a><center>一.提出问题</center></h2><center><br>题目是这样的<br><br>我们都知道如何调用windows操作系统中的任务管理器,<br>在任务管理器中,我们可以一目了然的看到cup的使用率<br>其中包括内存进程等等(以win7操作系统为例),当然这些不是我们需要去分析的<br><br>那有没有这样一种可能<br>可以通过编写一个程序,让我们的cpu稳定在百分之五十呈一条直线?<br>(在这里可以暂停一下,大家可以思考自己的想法)<br><br><br><br><br><br>如果听到这样的题目,大多数人会感到意外<br>如果是在考试中或者面试中遇到,很可能会让你手忙脚乱<br><br>这题看上去很复杂,因为我们不知道影响cpu使用率到底都有哪些因素<br>我们可以通过任务管理器的进程看到哪些程序在使用cpu,但是这样你会发现有很多前台后台,系统程序等等<br>总而言之,这会让这道题目看起来很复杂<br>因为甚至一次屏幕的闪烁,一次鼠标的点击都会影响到所谓的使用率<br>那我们该如何控制好这些进程,然后cpu固定在百分之五十<br><br></center>
+
+<h2 id="二-分析"><a href="#二-分析" class="headerlink" title="二.分析"></a><center>二.分析</center></h2><center><br>我们可以写一个死循环,让程序一直保持无休止的运行<br>这样cpu使用率或许可以保持一条直线,只是可惜不是在中间的位置<br><br>但是,如果在持续的运转中,我们利用sleep()函数让程序休息一下<br>只要时间规划好,我们可以让程序在持续的变动中维持下来<br><br>学过微积分的朋友都知道,所谓的曲线,也是由无数条直线组成的,所以<br>我们也可以通过无数微小的变动得出的曲线,组成一条宏观上的直线<br><br>我们只要在任务管理器刷新的一个周内,cpu忙的时间和刷新周期的比率,(这就是占用率)<br>统计的平均值,保持在百分之五十,这样,一条看起来像是直线的曲线,就完成了<br><br></center>
+
+<h2 id="三-解答"><a href="#三-解答" class="headerlink" title="三.解答"></a><center>三.解答</center></h2><center><br>首先什么是CPU占用率？<br>在任务管理器的一个刷新周期内，CPU忙（执行应用程序）的时间<br>和刷新周期总时间的比率，就是CPU的占用率，<br>也就是说，任务管理器中显示的是每个刷新周期内CPU占用率的统计平均值。<br>例如我的cpu是2.4Ghz,(2.4<em>10^9</em>2)/5=9.6*10^8(循环/秒)<br>这是cpu一秒钟可以执行空循环的次数<br>我们以10毫秒为单位,降低两个数量级,让cpu在工作和休息中来回切换<br>最后,可以得到如下代码<br></center>
+
+
+<pre><code>public class CPUTest 
+{ 
+    public static void main(String[] args) 
+    { 
+        long startTime = 0; 
+        int busyTime = 10; 
+        int idleTime = 10;
+        while (true) 
+        { 
+            startTime = System.currentTimeMillis(); 
+            while (System.currentTimeMillis() - startTime &lt;= busyTime) 
+                try 
+            { 
+                Thread.sleep(idleTime); 
+            } 
+            catch (InterruptedException e) 
+            { 
+                e.printStackTrace(); 
+            }
+        } 
+    }
+}
+</code></pre><h2 id="四-延伸"><a href="#四-延伸" class="headerlink" title="四.延伸"></a><center>四.延伸</center></h2><center><br>当然,我们可以将问题延伸一下<br><br>使cpu占用率成为一条直线,具体的占用率大小由参数决定(参数范围1~100)<br><br>使cpu的占用率成为一条正弦曲线<br><br><br>以上<br></center>
+
+
+<h2 id="哦-对了"><a href="#哦-对了" class="headerlink" title="哦,对了"></a><center>哦,对了</center></h2><p><center>这本书叫做”编程之美”</center></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[mybatis中关于ResultType和ResultMap的区别详解]]></title>
+      <url>http://weidablog.top/2016/12/12/mybatis01/</url>
+      <content type="html"><![CDATA[<h2 id="如题"><a href="#如题" class="headerlink" title="如题"></a><center>如题<a id="more"></a></center></h2><center><br>最近在学习mybatis.这是一种和habernate类似的持久层框架<br>不同的是mybatis需要自己手写sql语句<br>当然,这两者的区别也不完全只有这一点<br>今天的重点不是这个,而是我在学习到关联查询的地方时<br>有一个细节让我纠结了很久<br>在这里我简单总结一下<br><br>个人总结,仅供参考,具体正确与否还需读者自行判断<br></center>
+
+<h2 id="ResultType"><a href="#ResultType" class="headerlink" title="ResultType"></a><center>ResultType</center></h2><hr>
+<center><br>当提供的返回类型属性是resultType时，<br>MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。<br>所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，<br>只是当提供的返回类型属性是resultType的时候，<br>MyBatis对自动的给把对应的值赋给resultType所指定对象的属性。<br></center>
+
+<h2 id="ResultMap"><a href="#ResultMap" class="headerlink" title="ResultMap"></a><center>ResultMap</center></h2><hr>
+<center><br>当提供的返回类型是resultMap时，<br>因为Map不能很好表示领域模型，<br>就需要自己再进一步的把它转化为对应的对象，<br>这常常在复杂查询中很有作用。<br></center>
+
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a><center>区别</center></h2><hr>
+<center><br>首先,这两者不可以同时使用<br>其次从字面上理解<br>resultType 就是返回的类型<br>resultMap 返回的是一个结果集，<br>这个结果集一般是用过resultMap节点来配置的，<br>相应的type一般是一个pojo。<br><br>而resultType则就是类型，<br>包括了，int,sring,以及类似model这样的Object类型。<br><br><br>如果没有特殊的要求，使用resultType是比较方便，<br>只要能够保证sql查询的列和pojo属性名一致可以映射成功，<br>如果pojo中属性少了，添加属性即可。<br><br>特殊的要求：<br>如果需要将关联查询的信息映射到pojo的pojo属性中，<br>为了获取数据方便，可以使用resultMap。<br>如果使用延迟加载，只能使用resultMap。<br><br>所以,当你的对象中包含另外一个对象的话<br>resultMap是一个不错的选择<br>例如:<br><img src="/img/mybatis/mybatis02.png" alt="mybatis02"><br><br>以上<br></center>
+
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[当我敲代码的时候,我在听些什么?(一)]]></title>
+      <url>http://weidablog.top/2016/12/11/essay01/</url>
+      <content type="html"><![CDATA[<p>falling to the sky(向天空坠落)<a id="more"></a></p>
+<h2 id="falling-to-the-sky"><a href="#falling-to-the-sky" class="headerlink" title=" falling to the sky"></a><center> falling to the sky</center></h2><center><br>这是首歌来自日本的一个乐队archaique Smile<br><br>他们的处女作非常惊艳<br>“On The Eternal Boundary”<br>是我最喜欢的专辑之一<br><br>然而,我每次在编程或者看书的时候,<br>我喜欢打开MP3开始播放这首曲子<br><br>我不会为这首歌有一点点的分心,我也不会因为某些事情而出神<br>事实上当我听他的时候<br>我认为<br>他早已和环境融为一体<br><br><img src="/img/guitar/postrock/On The Eternal Boundary.png" alt="On The Eternal Boundary"><br><br>现在,我希望你可以找一个隔音效果好的耳机<br>如果有组合音响就更好了<br>最好关掉手机,排除一切外界干扰<br>点开链接之后<br>把音量调到最大…<br><br><a href="http://www.bilibili.com/video/av5592002/" target="_blank" rel="external">falling to the sky</a><br><br></center>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[当我敲代码的时候,我在听些什么(序)]]></title>
+      <url>http://weidablog.top/2016/12/10/essay/</url>
+      <content type="html"><![CDATA[<p>#半夜无眠,闲扯两句<a id="more"></a></p>
+<h2 id="序言"><a href="#序言" class="headerlink" title="序言:"></a><center>序言:</center></h2><hr>
+<center><br>嗯<br>在我成为一个程序员之前<br>我的梦想很简单,就是成为一个流浪歌手<br><br>重点是歌手,其次是流浪,或者当一个音乐制作人<br><br>总之,我的青春和每一个摇滚少年一样<br>我怀揣了一个自己的音乐梦<br><br>因为家庭的原因,我没有很好的条件从小开始接触这门艺术,<br>我在高中的时候第一次接触吉他,<br>而到了大学<br>我二十岁的时候,我才第一次摸到钢琴<br>第一次知道钢琴的十二个音<br>第一次知道大小三和弦,转换和弦,宫商角徵羽等等<br><br>我很感谢当时为我无私提供帮助的很多人<br>那个时候<br>我觉得我就是在完成我的梦想<br>我那一年疯狂的逃课,在外面找培训班学习乐器<br>在琴房学习钢琴,在网上学习cubase编曲…<br><br>但是最后我失败了<br>我觉得原因在于我<br>在生活面前,我选择了妥协<br>我的想法突然开始发生转变,我认为我<br>应该做一些和普通人一样的事情<br><br>我没有我所认为的天赋禀异,所以,在一条前途生死未仆的路上<br>我最终自己选择了放弃<br>走了一条大部分人认为<br>相对安全的道路<br><br>我知道从那一刻开始,我的生活少了很多故事<br><br>&gt;“是谁来自山川湖海 , 却囿于昼夜、厨房与爱”<br></center>
+
+<h2 id="正题"><a href="#正题" class="headerlink" title="正题"></a><center>正题</center></h2><hr>
+<center><br>编程是一件很哲学的事情<br><br>至少我是这样认为<br><br>音乐我觉得是代码的催化剂,即使敲不出什么惊天动地的代码<br>但是,我认为,这应该是每个程序员不可或缺的东西<br><br>我在这里专门开了一个板块<br><br>我会不定期的推荐一首,我最近,或者是以前,敲代码经常听的一首歌<br><br>不定期更新,每次只有一首<br></center>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git的快速入门(2)]]></title>
+      <url>http://weidablog.top/2016/12/10/git02/</url>
+      <content type="html"><![CDATA[<center><br>在这里我将会引入git版本仓库的概念,<br>并且,如果你是个新手,<br>我将会隆重想你介绍程序员的facebook–github代码托管仓库<br><a id="more"></a><br></center>
+
+<h2 id="三-仓库"><a href="#三-仓库" class="headerlink" title="三.仓库"></a><center>三.仓库</center></h2><h3 id="1-创建"><a href="#1-创建" class="headerlink" title="1.创建"></a><center>1.创建</center></h3><center><br>Git做为一个资源管理和跟踪系统，<br>如果想让git托管你的文件<br>那么首先你得让Git知道你需要管理的文件在哪。<br>巧妇难为无米之炊,git功能再强大,你如果什么都不交代<br>他也是力不从心的<br><br>那如何让git托管我们的文件呢?<br><br>其实很简单,在你需要管理的项目的文件夹下<br>右键选择git bash<br>然后运行”git init”命令。<br><strong><em><br><img src="/img/git/git05.png" alt="git05"><br><br>这个时候Git就会在该目录下生成一个.git的隐藏目录，<br>这样git进行版本控制和内容跟踪的所有文件都在该文件夹下。<br><br>如果想查看隐藏目录的内容,可以在命令行输入”ls -ah”
+</em></strong><br><img src="/img/git/git06.png" alt="git06"><br><br>但是我建议不要修改.git文件夹下的任何文件<br><em>*</em><br></center>
+
+<h3 id="2-添加"><a href="#2-添加" class="headerlink" title="2.添加"></a><center>2.添加</center></h3><center><br>将你需要托管的代码放在上一步部署的根文件夹下面<br>假设你在demo文件夹下运行了”git init”指令<br><br>此时你又在demo文件夹下创建了test.txt.<br>那么,执行下面两步,可以完成<br><br>文件路径根据自己实际情况而定<br><br>用”git add 文件名.后缀”告诉git,将文件添加到仓库<br><strong><em><br><img src="/img/git/git07.png" alt="git07"><br><br>用”git commit”将文件提交到git仓库
+</em></strong><br><img src="/img/git/git08.png" alt="git08"><br><br>“简单解释一下git commit命令，<br>-m后面输入的是本次提交的说明，可以输入任意内容<br>当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。<br>嫌麻烦不想输入-m “xxx”行不行？确实有办法可以这么干，<br>但是强烈不建议这么干，<br>因为代码的可读性对自己对别人都很重要。”<br><br><em>*</em><br>commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：<br>‘<br>$ git add file1.txt<br>$ git add file2.txt file3.txt<br>$ git commit -m “add 3 files.”<br>‘<br></center>
+
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h3><hr>
+<h2 id="四-github远程仓库"><a href="#四-github远程仓库" class="headerlink" title="四.github远程仓库"></a><center>四.github远程仓库</center></h2><center><br>一台电脑上也是可以克隆多个版本库的，<br>只要不在同一个目录下。不过，现实生活中是不会有人这么傻的在一台电脑上搞几个远程库玩，<br>因为一台电脑上搞几个远程库完全没有意义，<br>而且硬盘挂了会导致所有库都挂掉<br><br>实际情况往往是这样，<br>找一台电脑充当服务器的角色，每天24小时开机，<br>其他每个人都从这个“服务器”仓库克隆一份到自己的电脑上，<br>并且各自把各自的提交推送到服务器仓库里，<br>也从服务器仓库中拉取别人的提交。<br><br>这个世界上有个叫GitHub的神奇的网站，<br>从名字就可以看出，这个网站就是提供Git仓库托管服务的，<br>所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。<br><br>看到这里,你需要做的是请自行注册GitHub账号。<br><br><a href="https://www.zhihu.com/question/20070065#answer-27250329" target="_blank" rel="external">如何熟悉github?</a><br><br>由于你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，<br>所以，<br>需要一点设置：<br><br><a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">配置SSH-KEY</a><br><br>为什么GitHub需要SSH Key呢？<br>因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，<br>而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。<br><br>当然，GitHub允许你添加多个Key。<br>假定你有若干电脑，<br>你一会儿在公司提交，<br>一会儿在家里提交，<br>只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。<br><br><em>*</em><br></center>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git的快速入门(1)]]></title>
+      <url>http://weidablog.top/2016/12/10/git01/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>Git是目前世界上最先进的分布式版本控制系统（没有之一）<br>                   —廖雪峰<br><a id="more"></a></p>
+</blockquote>
+<center><br>这篇博客的搭建用了hexo+github psges,花了三天时间,走了不少弯路<br>好在最后终于成功<br>至于怎么搭建的博客,在这里就不赘述了<br>百度一下,答案有很多,<br>而且,<br>我相信,肯定写的都比我写的好<br><br>但是在搭建完成之后,我对git却产生了很大的兴趣,于是找了一些资料来学习一下<br>当然,这篇文章只是在对我自己学习git的过程中<br>一些知识理解和感悟的总结<br>我也是初学者,总结这东西,必定会有不少纰漏<br>但是我会一直更新这篇文章的进度<br>尽最大努力,让他看起来<br>更加的,完整<br><em>*</em><br><img src="/img/git/git04.png" alt="git04"><br></center>
+
+<h2 id="一-git是什么"><a href="#一-git是什么" class="headerlink" title="一.git是什么"></a><center>一.git是什么</center></h2><center><br>如果有过web开发经验的话<br>必定会接触到一个叫做版本控制系统的东西,<br>什么是版本控制系统<br>因为大部分项目都不可能是由一个人从头到尾开发完成,一旦有了分工合作,那么,我们就要解决一个在分工合作中<br>出现的一个各个版本不同的问题<br>我之前在学习spring的时候接触了一个叫做svn的版本控制系统<br>这是一个集中式的分布管理系统,<br>什么是集中式版本管理系统?<br><br>&gt;集中式版本控制系统，版本库是集中存放在中央服务器的，<br>&gt;而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，<br>&gt;然后开始干活，干完活了，再把自己的活推送给中央服务器。中央服务器就好比是一个图书馆，<br>&gt;你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。<br><br><img src="/img/git/git02.png" alt="git02"><br><br>集中式版本控制系统最大的毛病就是必须联网才能工作<br>不过在当时,我用的是局域网,所以也没有太大的感觉,<br>而git恰恰相反,这是一种分布式的版本管理系统<br><br>首先，分布式版本控制系统根本没有所谓的“中央服务器”，<br>每个人的电脑上都是一个完整的版本库，<br>当你工作的时候，就可以不需要联网<br>因为版本库就在你自己的电脑上。<br><br><img src="/img/git/git03.png" alt="git03"><br><br>当需要你们整合文件的时候<br>比方说两个人都对某个文件做出了修改<br>那么两个人之间只需把各自的修改推送给对方，<br>就可以互相看到对方的修改了。<br><br>和集中式版本控制系统相比，<br>分布式版本控制系统的安全性要高很多，<br>Git中每个克隆(clone)的版本库都是平等的。<br>你可以从任何一个版本库的克隆来创建属于你自己的版本库，<br>同时你的版本库也可以作为源提供给他人<br>而集中式版本控制系统的中央服务器要是出了问题，<br>会导致所有人都没法干活了。<br><br>而svn有个让我很费解的地方在于<br>svn解决冲突是拼手速,如果你可以早提交,则万事大吉,平安无事<br>如果晚提交,哪怕代码性能非常好,也会有相当麻烦的冲突解决<br></center>
+
+<hr>
+<h2 id="二-git的安装"><a href="#二-git的安装" class="headerlink" title="二.git的安装"></a><center>二.git的安装</center></h2><center><br>百度遍地的教程,我用的是windows系统,当你可以在菜单看到git-bush的图标<br>点开可以看到一个类似dos命令窗口的东西,那么说明你安装成功<br><img src="/img/git/git01.png" alt="git01"><br>设置好账号密码之后,就可以使用git了<br><em>*</em><br></center>
+
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h2><p>参考:<br>   <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的官方主页</a><br>   <a href="http://www.nowamagic.net/academy/detail/48160205" target="_blank" rel="external">git背后的故事</a><br>   <a href="https://git-scm.com/docs/gittutorial" target="_blank" rel="external">git官方教程</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Welcome]]></title>
+      <url>http://weidablog.top/2016/12/07/again/</url>
+      <content type="html"><![CDATA[<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a><center>Welcome</center></h2><hr>
+<h2 id="嗯"><a href="#嗯" class="headerlink" title="嗯,"></a><center>嗯,</center></h2><center>终于可以说点什么了<a id="more"></a><br>其实这个网站内容的话我会慢慢补充<br>我想,以后大多会更新一些技术方面的文章,<br>关于java js git 前端后台以及我感兴趣的领域<br>当然<br>偶尔我会写一些兴趣爱好相关的<br>若干链接都没有弄好,<br>不过你们也可以尝试着四处点点<br>可惜,他不会给你反馈<br><br>你们可以通过微信联系到我<br>Wechat:xiongweida002<br>或者,email<br>值得高兴的是,邮件的按钮是有用的,<br>你们可以通过旁边的菜单找到他<br><br>今天是这个网站的生日<br><br>所以,HappyBirthday<br>以及所有今天过生日的人<br>就这样<br></center>]]></content>
+    </entry>
+    
+  
+  
+</search>
