@@ -221,21 +221,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Git的快速入门(2)]]></title>
-      <url>http://weidablog.top/2016/12/10/git02/</url>
-      <content type="html"><![CDATA[<center><br>在这里我将会引入git版本仓库的概念,<br>并且,如果你是个新手,<br>我将会隆重想你介绍程序员的facebook–github代码托管仓库<br><a id="more"></a><br></center>
-
-<h2 id="三-仓库"><a href="#三-仓库" class="headerlink" title="三.仓库"></a><center>三.仓库</center></h2><h3 id="1-创建"><a href="#1-创建" class="headerlink" title="1.创建"></a><center>1.创建</center></h3><center><br>Git做为一个资源管理和跟踪系统，<br>如果想让git托管你的文件<br>那么首先你得让Git知道你需要管理的文件在哪。<br>巧妇难为无米之炊,git功能再强大,你如果什么都不交代<br>他也是力不从心的<br><br>那如何让git托管我们的文件呢?<br><br>其实很简单,在你需要管理的项目的文件夹下<br>右键选择git bash<br>然后运行”git init”命令。<br><strong><em><br><img src="/img/git/git05.png" alt="git05"><br><br>这个时候Git就会在该目录下生成一个.git的隐藏目录，<br>这样git进行版本控制和内容跟踪的所有文件都在该文件夹下。<br><br>如果想查看隐藏目录的内容,可以在命令行输入”ls -ah”
-</em></strong><br><img src="/img/git/git06.png" alt="git06"><br><br>但是我建议不要修改.git文件夹下的任何文件<br><em>*</em><br></center>
-
-<h3 id="2-添加"><a href="#2-添加" class="headerlink" title="2.添加"></a><center>2.添加</center></h3><center><br>将你需要托管的代码放在上一步部署的根文件夹下面<br>假设你在demo文件夹下运行了”git init”指令<br><br>此时你又在demo文件夹下创建了test.txt.<br>那么,执行下面两步,可以完成<br><br>文件路径根据自己实际情况而定<br><br>用”git add 文件名.后缀”告诉git,将文件添加到仓库<br><strong><em><br><img src="/img/git/git07.png" alt="git07"><br><br>用”git commit”将文件提交到git仓库
-</em></strong><br><img src="/img/git/git08.png" alt="git08"><br><br>“简单解释一下git commit命令，<br>-m后面输入的是本次提交的说明，可以输入任意内容<br>当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。<br>嫌麻烦不想输入-m “xxx”行不行？确实有办法可以这么干，<br>但是强烈不建议这么干，<br>因为代码的可读性对自己对别人都很重要。”<br><br><em>*</em><br>commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：<br>‘<br>$ git add file1.txt<br>$ git add file2.txt file3.txt<br>$ git commit -m “add 3 files.”<br>‘<br></center>
-
-<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h3><hr>
-<h2 id="四-github远程仓库"><a href="#四-github远程仓库" class="headerlink" title="四.github远程仓库"></a><center>四.github远程仓库</center></h2><center><br>一台电脑上也是可以克隆多个版本库的，<br>只要不在同一个目录下。不过，现实生活中是不会有人这么傻的在一台电脑上搞几个远程库玩，<br>因为一台电脑上搞几个远程库完全没有意义，<br>而且硬盘挂了会导致所有库都挂掉<br><br>实际情况往往是这样，<br>找一台电脑充当服务器的角色，每天24小时开机，<br>其他每个人都从这个“服务器”仓库克隆一份到自己的电脑上，<br>并且各自把各自的提交推送到服务器仓库里，<br>也从服务器仓库中拉取别人的提交。<br><br>这个世界上有个叫GitHub的神奇的网站，<br>从名字就可以看出，这个网站就是提供Git仓库托管服务的，<br>所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。<br><br>看到这里,你需要做的是请自行注册GitHub账号。<br><br><a href="https://www.zhihu.com/question/20070065#answer-27250329" target="_blank" rel="external">如何熟悉github?</a><br><br>由于你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，<br>所以，<br>需要一点设置：<br><br><a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">配置SSH-KEY</a><br><br>为什么GitHub需要SSH Key呢？<br>因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，<br>而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。<br><br>当然，GitHub允许你添加多个Key。<br>假定你有若干电脑，<br>你一会儿在公司提交，<br>一会儿在家里提交，<br>只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。<br><br><em>*</em><br></center>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Git的快速入门(1)]]></title>
       <url>http://weidablog.top/2016/12/10/git01/</url>
       <content type="html"><![CDATA[<blockquote>
@@ -250,6 +235,21 @@
 
 <h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h2><p>参考:<br>   <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的官方主页</a><br>   <a href="http://www.nowamagic.net/academy/detail/48160205" target="_blank" rel="external">git背后的故事</a><br>   <a href="https://git-scm.com/docs/gittutorial" target="_blank" rel="external">git官方教程</a></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git的快速入门(2)]]></title>
+      <url>http://weidablog.top/2016/12/10/git02/</url>
+      <content type="html"><![CDATA[<center><br>在这里我将会引入git版本仓库的概念,<br>并且,如果你是个新手,<br>我将会隆重想你介绍程序员的facebook–github代码托管仓库<br><a id="more"></a><br></center>
+
+<h2 id="三-仓库"><a href="#三-仓库" class="headerlink" title="三.仓库"></a><center>三.仓库</center></h2><h3 id="1-创建"><a href="#1-创建" class="headerlink" title="1.创建"></a><center>1.创建</center></h3><center><br>Git做为一个资源管理和跟踪系统，<br>如果想让git托管你的文件<br>那么首先你得让Git知道你需要管理的文件在哪。<br>巧妇难为无米之炊,git功能再强大,你如果什么都不交代<br>他也是力不从心的<br><br>那如何让git托管我们的文件呢?<br><br>其实很简单,在你需要管理的项目的文件夹下<br>右键选择git bash<br>然后运行”git init”命令。<br><strong><em><br><img src="/img/git/git05.png" alt="git05"><br><br>这个时候Git就会在该目录下生成一个.git的隐藏目录，<br>这样git进行版本控制和内容跟踪的所有文件都在该文件夹下。<br><br>如果想查看隐藏目录的内容,可以在命令行输入”ls -ah”
+</em></strong><br><img src="/img/git/git06.png" alt="git06"><br><br>但是我建议不要修改.git文件夹下的任何文件<br><em>*</em><br></center>
+
+<h3 id="2-添加"><a href="#2-添加" class="headerlink" title="2.添加"></a><center>2.添加</center></h3><center><br>将你需要托管的代码放在上一步部署的根文件夹下面<br>假设你在demo文件夹下运行了”git init”指令<br><br>此时你又在demo文件夹下创建了test.txt.<br>那么,执行下面两步,可以完成<br><br>文件路径根据自己实际情况而定<br><br>用”git add 文件名.后缀”告诉git,将文件添加到仓库<br><strong><em><br><img src="/img/git/git07.png" alt="git07"><br><br>用”git commit”将文件提交到git仓库
+</em></strong><br><img src="/img/git/git08.png" alt="git08"><br><br>“简单解释一下git commit命令，<br>-m后面输入的是本次提交的说明，可以输入任意内容<br>当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。<br>嫌麻烦不想输入-m “xxx”行不行？确实有办法可以这么干，<br>但是强烈不建议这么干，<br>因为代码的可读性对自己对别人都很重要。”<br><br><em>*</em><br>commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：<br>‘<br>$ git add file1.txt<br>$ git add file2.txt file3.txt<br>$ git commit -m “add 3 files.”<br>‘<br></center>
+
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h3><hr>
+<h2 id="四-github远程仓库"><a href="#四-github远程仓库" class="headerlink" title="四.github远程仓库"></a><center>四.github远程仓库</center></h2><center><br>一台电脑上也是可以克隆多个版本库的，<br>只要不在同一个目录下。不过，现实生活中是不会有人这么傻的在一台电脑上搞几个远程库玩，<br>因为一台电脑上搞几个远程库完全没有意义，<br>而且硬盘挂了会导致所有库都挂掉<br><br>实际情况往往是这样，<br>找一台电脑充当服务器的角色，每天24小时开机，<br>其他每个人都从这个“服务器”仓库克隆一份到自己的电脑上，<br>并且各自把各自的提交推送到服务器仓库里，<br>也从服务器仓库中拉取别人的提交。<br><br>这个世界上有个叫GitHub的神奇的网站，<br>从名字就可以看出，这个网站就是提供Git仓库托管服务的，<br>所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。<br><br>看到这里,你需要做的是请自行注册GitHub账号。<br><br><a href="https://www.zhihu.com/question/20070065#answer-27250329" target="_blank" rel="external">如何熟悉github?</a><br><br>由于你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，<br>所以，<br>需要一点设置：<br><br><a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">配置SSH-KEY</a><br><br>为什么GitHub需要SSH Key呢？<br>因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，<br>而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。<br><br>当然，GitHub允许你添加多个Key。<br>假定你有若干电脑，<br>你一会儿在公司提交，<br>一会儿在家里提交，<br>只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。<br><br><em>*</em><br></center>]]></content>
     </entry>
     
     <entry>
