@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        Git的快速入门(2) | X
+        在springMVC开发中的注解开发 | X
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://weidablog.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Git的快速入门(2) | X">
+    <meta property="og:title" content="在springMVC开发中的注解开发 | X">
     <meta property="og:description" content="Record some ideas">
     
      <!--[if lte IE 9]>
@@ -210,7 +210,7 @@
 	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
 		for="post-toc-trigger-btn">
 			
-			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-仓库"><span class="post-toc-number">1.</span> <span class="post-toc-text">三.仓库</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-创建"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.创建</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-添加"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.添加</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#未完待续"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">未完待续</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-github远程仓库"><span class="post-toc-number">2.</span> <span class="post-toc-text">四.github远程仓库</span></a></li></ol>
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事务管理方式"><span class="post-toc-number">1.</span> <span class="post-toc-text">事务管理方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#TransactionTemplate注解"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">TransactionTemplate注解</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自动提交"><span class="post-toc-number">2.</span> <span class="post-toc-text">自动提交</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事务隔离级别"><span class="post-toc-number">3.</span> <span class="post-toc-text">事务隔离级别</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#TransactionDefinition注解"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">TransactionDefinition注解</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事务传播行为"><span class="post-toc-number">4.</span> <span class="post-toc-text">事务传播行为</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事务超时"><span class="post-toc-number">5.</span> <span class="post-toc-text">事务超时</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#事务只读属性"><span class="post-toc-number">6.</span> <span class="post-toc-text">事务只读属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#spring事务回滚规则"><span class="post-toc-number">7.</span> <span class="post-toc-text">spring事务回滚规则</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Transactional注解"><span class="post-toc-number">8.</span> <span class="post-toc-text">@Transactional注解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#用法"><span class="post-toc-number">9.</span> <span class="post-toc-text">用法</span></a></li></ol>
 		
 <!--			<li class="mdl-menu__item">Some Action</li>-->
 	</ul>
@@ -228,10 +228,10 @@
 	<!-- Paradox Post Header -->
 	
 		<!-- Custom Thumbnail -->
-		<div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/random/address/git02.png)">
+		<div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/random/address/spring.jpg)">
 	
         <p class="article-headline-p">
-            Git的快速入门(2)
+            在springMVC开发中的注解开发
         </p>
     </div>
 
@@ -249,7 +249,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Legolas</strong>
-        <span>12月 10, 2016</span>
+        <span>1月 14, 2017</span>
     </div>
     
     <div class="section-spacer"></div>
@@ -269,7 +269,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/git/">git</a>
+        <a class="post_tag-link" href="/tags/java/">java</a>
     </ul>
     
     <!-- Share -->
@@ -293,21 +293,21 @@
     
     
     <!-- Share Twitter -->
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Git的快速入门(2)&url=http://weidablog.top//2016/12/10/git02/index.html&via=Legolas" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=在springMVC开发中的注解开发&url=http://weidablog.top//2017/01/14/spring/index.html&via=Legolas" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
     </a>
     
     <!-- Share Google+ -->
-    <a class="post_share-link" href="https://plus.google.com/share?url=http://weidablog.top//2016/12/10/git02/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://weidablog.top//2017/01/14/spring/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
     </a>
     
     <!-- Share Weibo -->
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Git的快速入门(2)&url=http://weidablog.top//2016/12/10/git02/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=在springMVC开发中的注解开发&url=http://weidablog.top//2017/01/14/spring/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -319,16 +319,102 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
-		<center><br>在这里我将会引入git版本仓库的概念,<br>并且,如果你是个新手,<br>我将会隆重想你介绍程序员的facebook–github代码托管仓库<br><a id="more"></a><br></center>
+		<a id="more"></a>
+<p>最近在搭框架的时候,业务层的接口会架一个@transactionalde的注解,这是一个保证事物原子性的注解,同时也声明了这个是搭载在spring框架中的文件.<br>所谓原子性是事物的特质之一,一旦事物具有原子性,他就是一个不可分割的整体,当出现异常时回滚,要么同时成功,要么同时失败,颇有点拖人下水的感觉.</p>
+<h2 id="事务管理方式"><a href="#事务管理方式" class="headerlink" title="事务管理方式"></a>事务管理方式</h2><h3 id="TransactionTemplate注解"><a href="#TransactionTemplate注解" class="headerlink" title="TransactionTemplate注解"></a>TransactionTemplate注解</h3><p>spring支持编程式事务管理和声明式事务管理两种方式。</p>
+<p>编程式事务管理使用TransactionTemplate或者直接使用底层的PlatformTransactionManager。对于编程式事务管理，spring推荐使用TransactionTemplate。</p>
+<p>声明式事务管理建立在AOP之上的。其本质是对方法前后进行拦截，然后在目标方法开始之前创建或者加入一个事务，在执行完目标方法之后根据执行情况提交或者回滚事务。声明式事务最大的优点就是不需要通过编程的方式管理事务，这样就不需要在业务逻辑代码中掺杂事务管理的代码，只需在配置文件中做相关的事务规则声明(或通过基于@Transactional注解的方式)，便可以将事务规则应用到业务逻辑中。</p>
+<p>显然声明式事务管理要优于编程式事务管理，这正是spring倡导的非侵入式的开发方式。声明式事务管理使业务代码不受污染，一个普通的POJO对象，只要加上注解就可以获得完全的事务支持。和编程式事务相比，声明式事务唯一不足地方是，后者的最细粒度只能作用到方法级别，无法做到像编程式事务那样可以作用到代码块级别。但是即便有这样的需求，也存在很多变通的方法，比如，可以将需要进行事务管理的代码块独立为方法等等。</p>
+<p>声明式事务管理也有两种常用的方式，一种是基于tx和aop名字空间的xml配置文件，另一种就是基于@Transactional注解。显然基于注解的方式更简单易用，更清爽。</p>
+<h2 id="自动提交"><a href="#自动提交" class="headerlink" title="自动提交"></a>自动提交</h2><p>默认情况下，数据库处于自动提交模式。每一条语句处于一个单独的事务中，在这条语句执行完毕时，如果执行成功则隐式的提交事务，如果<br>执行失败则隐式的回滚事务。</p>
+<p>对于正常的事务管理，是一组相关的操作处于一个事务之中，因此必须关闭数据库的自动提交模式。不过，这个我们不用担心，spring会将底层连接的自动提交特性设置为false。</p>
+<p><b>其中TransactionDefinition接口定义以下特性：</b></p>
+<h2 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h2><h3 id="TransactionDefinition注解"><a href="#TransactionDefinition注解" class="headerlink" title="TransactionDefinition注解"></a>TransactionDefinition注解</h3><p>隔离级别是指若干个并发的事务之间的隔离程度。TransactionDefinition 接口中定义了五个表示隔离级别的常量：</p>
+<ul>
+<li>TransactionDefinition.ISOLATION_DEFAULT：这是默认值，表示使用底层数据库的默认隔离级别。对大部分数据库而言，通常这值就是TransactionDefinition.ISOLATION_READ_COMMITTED。</li>
+<li>TransactionDefinition.ISOLATION_READ_UNCOMMITTED：该隔离级别表示一个事务可以读取另一个事务修改但还没有提交的数据。该级别不能防止脏读，不可重复读和幻读，因此很少使用该隔离级别。比如PostgreSQL实际上并没有此级别。</li>
+<li>TransactionDefinition.ISOLATION_READ_COMMITTED：该隔离级别表示一个事务只能读取另一个事务已经提交的数据。该级别可以防止脏读，这也是大多数情况下的推荐值。</li>
+<li>TransactionDefinition.ISOLATION_REPEATABLE_READ：该隔离级别表示一个事务在整个过程中可以多次重复执行某个查询，并且每次返回的记录都相同。该级别可以防止脏读和不可重复读。</li>
+<li>TransactionDefinition.ISOLATION_SERIALIZABLE：所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，该级别可以防止脏读、不可重复读以及幻读。但是这将严重影响程序的性能。通常情况下也不会用到该级别。</li>
+</ul>
+<h2 id="事务传播行为"><a href="#事务传播行为" class="headerlink" title="事务传播行为"></a>事务传播行为</h2><p>所谓事务的传播行为是指，如果在开始当前事务之前，一个事务上下文已经存在，此时有若干选项可以指定一个事务性方法的执行行为。在TransactionDefinition定义中包括了如下几个表示传播行为的常量：</p>
+<ul>
+<li>TransactionDefinition.PROPAGATION_REQUIRED：如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。这是默认值。</li>
+<li>TransactionDefinition.PROPAGATION_REQUIRES_NEW：创建一个新的事务，如果当前存在事务，则把当前事务挂起。<br>*TransactionDefinition.PROPAGATION_SUPPORTS：如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。</li>
+<li>TransactionDefinition.PROPAGATION_NOT_SUPPORTED：以非事务方式运行，如果当前存在事务，则把当前事务挂起。</li>
+<li>TransactionDefinition.PROPAGATION_NEVER：以非事务方式运行，如果当前存在事务，则抛出异常。</li>
+<li>TransactionDefinition.PROPAGATION_MANDATORY：如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。</li>
+<li>TransactionDefinition.PROPAGATION_NESTED：如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于TransactionDefinition.PROPAGATION_REQUIRED。</li>
+</ul>
+<h2 id="事务超时"><a href="#事务超时" class="headerlink" title="事务超时"></a>事务超时</h2><p>所谓事务超时，就是指一个事务所允许执行的最长时间，如果超过该时间限制但事务还没有完成，则自动回滚事务。在 TransactionDefinition 中以 int 的值来表示超时时间，其单位是秒。</p>
+<p>默认设置为底层事务系统的超时值，如果底层数据库事务系统没有设置超时值，那么就是none，没有超时限制。</p>
+<h2 id="事务只读属性"><a href="#事务只读属性" class="headerlink" title="事务只读属性"></a>事务只读属性</h2><p>只读事务用于客户代码只读但不修改数据的情形，只读事务用于特定情景下的优化，比如使用Hibernate的时候。<br>默认为读写事务。</p>
+<h2 id="spring事务回滚规则"><a href="#spring事务回滚规则" class="headerlink" title="spring事务回滚规则"></a>spring事务回滚规则</h2><p>指示spring事务管理器回滚一个事务的推荐方法是在当前事务的上下文内抛出异常。spring事务管理器会捕捉任何未处理的异常，然后依据规则决定是否回滚抛出异常的事务。</p>
+<p>默认配置下，spring只有在抛出的异常为运行时unchecked异常时才回滚该事务，也就是抛出的异常为RuntimeException的子类(Errors也会导致事务回滚)，而抛出checked异常则不会导致事务回滚。<br>可以明确的配置在抛出那些异常时回滚事务，包括checked异常。也可以明确定义那些异常抛出时不回滚事务。</p>
+<p>还可以编程性的通过setRollbackOnly()方法来指示一个事务必须回滚，在调用完setRollbackOnly()后你所能执行的唯一操作就是回滚</p>
+<h2 id="Transactional注解"><a href="#Transactional注解" class="headerlink" title="@Transactional注解"></a>@Transactional注解</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:right">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td style="text-align:center">String</td>
+<td style="text-align:right">可选的限定描述符，指定使用的事务管理器</td>
+</tr>
+<tr>
+<td>propagation</td>
+<td style="text-align:center">enum: Propagation</td>
+<td style="text-align:right">可选的事务传播行为设置</td>
+</tr>
+<tr>
+<td>isolation</td>
+<td style="text-align:center">enum: Isolation</td>
+<td style="text-align:right">可选的事务隔离级别设置</td>
+</tr>
+<tr>
+<td>readOnly</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:right">读写或只读事务，默认读写</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td style="text-align:center">int (in seconds granularity)</td>
+<td style="text-align:right">事务超时时间设置</td>
+</tr>
+<tr>
+<td>rollbackFor</td>
+<td style="text-align:center">Class对象数组，必须继承自Throwable</td>
+<td style="text-align:right">导致事务回滚的异常类数组</td>
+</tr>
+<tr>
+<td>rollbackForClassName</td>
+<td style="text-align:center">类名数组，必须继承自Throwable</td>
+<td style="text-align:right">导致事务回滚的异常类名字数组</td>
+</tr>
+<tr>
+<td>noRollbackFor</td>
+<td style="text-align:center">Class对象数组，必须继承自Throwable</td>
+<td style="text-align:right">不会导致事务回滚的异常类数组</td>
+</tr>
+<tr>
+<td>noRollbackForClassName</td>
+<td style="text-align:center">类名数组，必须继承自Throwable</td>
+<td style="text-align:right">不会导致事务回滚的异常类名字数组</td>
+</tr>
+</tbody>
+</table>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>@Transactional 可以作用于接口、接口方法、类以及类方法上。当作用于类上时，该类的所有 public 方法将都具有该类型的事务属性，同时，我们也可以在方法级别使用该标注来覆盖类级别的定义。</p>
+<p>虽然 @Transactional 注解可以作用于接口、接口方法、类以及类方法上，但是 Spring 建议不要在接口或者接口方法上使用该注解，因为这只有在使用基于接口的代理时它才会生效。另外， @Transactional 注解应该只被应用到 public 方法上，这是由 Spring AOP 的本质决定的。如果你在 protected、private 或者默认可见性的方法上使用 @Transactional 注解，这将被忽略，也不会抛出任何异常。</p>
+<p>默认情况下，只有来自外部的方法调用才会被AOP代理捕获，也就是，类内部方法调用本类内部的其他方法并不会引起事务行为，即使被调用方法使用@Transactional注解进行修饰。</p>
+<blockquote>
+<p>摘自博客园</p>
+</blockquote>
 
-<h2 id="三-仓库"><a href="#三-仓库" class="headerlink" title="三.仓库"></a><center>三.仓库</center></h2><h3 id="1-创建"><a href="#1-创建" class="headerlink" title="1.创建"></a><center>1.创建</center></h3><center><br>Git做为一个资源管理和跟踪系统，<br>如果想让git托管你的文件<br>那么首先你得让Git知道你需要管理的文件在哪。<br>巧妇难为无米之炊,git功能再强大,你如果什么都不交代<br>他也是力不从心的<br><br>那如何让git托管我们的文件呢?<br><br>其实很简单,在你需要管理的项目的文件夹下<br>右键选择git bash<br>然后运行”git init”命令。<br><strong><em><br><img src="/img/git/git05.png" alt="git05"><br><br>这个时候Git就会在该目录下生成一个.git的隐藏目录，<br>这样git进行版本控制和内容跟踪的所有文件都在该文件夹下。<br><br>如果想查看隐藏目录的内容,可以在命令行输入”ls -ah”
-</em></strong><br><img src="/img/git/git06.png" alt="git06"><br><br>但是我建议不要修改.git文件夹下的任何文件<br><em>*</em><br></center>
-
-<h3 id="2-添加"><a href="#2-添加" class="headerlink" title="2.添加"></a><center>2.添加</center></h3><center><br>将你需要托管的代码放在上一步部署的根文件夹下面<br>假设你在demo文件夹下运行了”git init”指令<br><br>此时你又在demo文件夹下创建了test.txt.<br>那么,执行下面两步,可以完成<br><br>文件路径根据自己实际情况而定<br><br>用”git add 文件名.后缀”告诉git,将文件添加到仓库<br><strong><em><br><img src="/img/git/git07.png" alt="git07"><br><br>用”git commit”将文件提交到git仓库
-</em></strong><br><img src="/img/git/git08.png" alt="git08"><br><br>“简单解释一下git commit命令，<br>-m后面输入的是本次提交的说明，可以输入任意内容<br>当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。<br>嫌麻烦不想输入-m “xxx”行不行？确实有办法可以这么干，<br>但是强烈不建议这么干，<br>因为代码的可读性对自己对别人都很重要。”<br><br><em>*</em><br>commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：<br>‘<br>$ git add file1.txt<br>$ git add file2.txt file3.txt<br>$ git commit -m “add 3 files.”<br>‘<br></center>
-
-<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><center>未完待续</center></h3><hr>
-<h2 id="四-github远程仓库"><a href="#四-github远程仓库" class="headerlink" title="四.github远程仓库"></a><center>四.github远程仓库</center></h2><center><br>一台电脑上也是可以克隆多个版本库的，<br>只要不在同一个目录下。不过，现实生活中是不会有人这么傻的在一台电脑上搞几个远程库玩，<br>因为一台电脑上搞几个远程库完全没有意义，<br>而且硬盘挂了会导致所有库都挂掉<br><br>实际情况往往是这样，<br>找一台电脑充当服务器的角色，每天24小时开机，<br>其他每个人都从这个“服务器”仓库克隆一份到自己的电脑上，<br>并且各自把各自的提交推送到服务器仓库里，<br>也从服务器仓库中拉取别人的提交。<br><br>这个世界上有个叫GitHub的神奇的网站，<br>从名字就可以看出，这个网站就是提供Git仓库托管服务的，<br>所以，只要注册一个GitHub账号，就可以免费获得Git远程仓库。<br><br>看到这里,你需要做的是请自行注册GitHub账号。<br><br><a href="https://www.zhihu.com/question/20070065#answer-27250329" target="_blank" rel="external">如何熟悉github?</a><br><br>由于你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，<br>所以，<br>需要一点设置：<br><br><a href="http://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html" target="_blank" rel="external">配置SSH-KEY</a><br><br>为什么GitHub需要SSH Key呢？<br>因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，<br>而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。<br><br>当然，GitHub允许你添加多个Key。<br>假定你有若干电脑，<br>你一会儿在公司提交，<br>一会儿在家里提交，<br>只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。<br><br><em>*</em><br></center>
 	
 	
 	
@@ -355,9 +441,9 @@
 <div id="comments">
     <!-- 多说评论框 start -->
         <div class="ds-thread" 
-            data-thread-key="2016/12/10/git02/" 
-            data-url="http://weidablog.top/2016/12/10/git02/"
-            data-title="Git的快速入门(2)"></div>
+            data-thread-key="2017/01/14/spring/" 
+            data-url="http://weidablog.top/2017/01/14/spring/"
+            data-title="在springMVC开发中的注解开发"></div>
     <!-- 多说评论框 end -->
 </div>
 
@@ -370,21 +456,13 @@
     
     <!-- Prev Nav -->
     
-        <a href="/2016/12/10/essay/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2016/12/10/git01/" id="post_nav-older" class="next-content">
+        <a href="/2017/01/10/design/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
